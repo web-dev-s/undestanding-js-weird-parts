@@ -2,19 +2,20 @@
 resumed ideas from [JavaScript: Understanding the Weird Parts- Anthony Alicea](https://www.udemy.com/course/understand-javascript/)
 
 
-Execution Context and Lexical Environments:
--Lexical Environment (where declaration bodies reside)
--Execution Environment (stack execution order)
+
+## Execution Context and Lexical Environments:
+- Lexical Environment (where declaration bodies reside)
+- Execution Environment (stack execution order)
     { 
 - Function execution context (at top stack)
 - Global execution context (at bottom stack)
      }
--Scope Chain (propagation of scopes from parent to child)
--JavaScript Engine->event Queue (asynchronous behaviour is related to what happens outside JavaScript Engine-> resulted from  execution injection into stack)
+- Scope Chain (propagation of scopes from parent to child)
+- JavaScript Engine->event Queue (asynchronous behaviour is related to what happens outside JavaScript Engine-> resulted from  execution injection into stack)
 
-Types and Operators:
--dynamic typing (no static typing)
--primitive types: data that represents a single value that is not an object ( 
+## Types and Operators:
+- dynamic typing (no static typing)
+- primitive types: data that represents a single value that is not an object ( 
 * undefined -lack of existence, declared by engine
 * null- lack of existence, declared by programmer
 * boolean- true or false
@@ -22,7 +23,7 @@ Types and Operators:
 * string- sequence of chars between ‘’, “” or ``
 * symbol-ES6
 
--operators-special function syntactically different written (infixed notation between 2 arguments that return result)
+- operators-special function syntactically different written (infixed notation between 2 arguments that return result)
 
 * Precedence (order of call from higher downer) and Associativity (same precedence execution ltr or rtl )
 * Coercion -converting a value from one type to another
@@ -30,7 +31,7 @@ Types and Operators:
 * Existence and Booleans : Boolean(0) coerce to false => a=0; if (a||a===0){’executes true’}
 * Default Values : colliding imported libs in global context ,overriding with latest assignment same named global variable value 
 
-Objects and functions:
+## Objects and functions:
 * An object literal contains name-value pairs with values being primitives or objects or methods(functions attached to object)
 * Namespaces are containers.For avoiding collisions can be faked by allocating content to an object 
 * JSON are not object literals, are mostly string transfer data
@@ -61,18 +62,18 @@ Objects and functions:
             *  reference to Outer Environment (determines scope chain search for variables) 
             * the keyword this
             * arguments (all parameters values passed to function grouped in array-like  [ , , ,] special keyword arguments )
-Arrays
+## Arrays
 * Regular array is a zero based list or collection of items (item can be anything in same array: primitive, object, function, jsx)
-Function Overloading
+##  Function Overloading
 * Does not exist in javascript
 * Can be achieved by patterns: creating a function that calls inside overloaded variants
-Syntax parser 
+##  Syntax parser 
 * -> goes in code character by character making assumptions
 * -> dangerous aside: automatic semicolon insertion. Semicolons insertion should not be let at JavascriptEngine attitude to complete (return {key:’’value} executes as return; {key:’’value} )
 * -> whitespace : permissible (permits adding comments in-between declarations for example  with //)
 * Immediately invokes function expressions (IIFE) (()=>{})() are creating their execution context that is disposed immediately after execution, avoiding collisions
 * Parentheses is the grouping operator containing expressions or IIFE ,  (()=>{}())
-Closures
+##  Closures
 * A closure represents the JS feature that computes for closing in all variables at which a function should have access at, making them available .  (Saves from disposed function exec. context all variables necessary for any other function exec. contexts that have dependencies pointing to space allocated for initial disposed fn context exec.)
     * When there are inner execution contexts disposed, the resulted free variables necessary  for outer scopes executions are stored in JS Engine memory at their latest assigned value. To prevent that could be created a inner IIFE, with local scoped necessary variables passed in as arguments that will return another function in which IIFE’s arguments will be used in execution/return
 *  Function Factories -> are using closures for the inner logic of returned functions
@@ -82,10 +83,10 @@ call(), apply(), bind()
     * apply()->calls the function with first argument the this return object and second argument an array with initial arguments as items
     * bind()-> creates a copy of function that changes this  return value to the object passed as first argument. If initial functions arguments are passed correspondently starting with second position into bind function will automatically  permanent preset values of initial function parameters at execution time (currying= creating copy of function with some preset parameters)
     * All could be used in function borrowing for changing this return object . Bind also could be used for function currying
-Functional programming
-* 
+##  Functional programming
+* see ramda
 
-Object Oriented Javascript & Prototypal
+## Object Oriented Javascript & Prototypal
 * Inheritance = getting access at object level to other object’s properties and methods
     * Prototypal inheritance: simple, flexible, extensible, easy to understand
         * Any object has a prototype object (pointing to where properties or methods are in memory), that could have his own prototype object and so on=>prototype chain (ends when prototype is Object {})
@@ -93,7 +94,7 @@ Object Oriented Javascript & Prototypal
         * this will return object value with fallback to prototype value.
 * Reflection: an object can look at itself , listing and changing its properties and methods
 
-Building Objects
+## Building Objects
 * Function Constructors- a normal function used to construct objects
     * this variable points to a a new empty object. That object is returned from function
         * new  operator changes this return for the newly created object (inside a function constructor)
@@ -109,7 +110,7 @@ Building Objects
     * class keyword represents objects 
     * is better to use them instead of  function constructors
     * keyword extends sets prototype
-Odds and ends
+## Odds and ends
 * Initialization- body of object according with jsEngine expectations
 * typeof  -operator that  returns primitive type name as string
     * For objects like d=[]  better use Object.prototype.toString.call(d)
@@ -120,14 +121,14 @@ Odds and ends
     * Can be used even independently in function execution context level (“use strict”)
     * Every jsEngine implements use strict differently (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode)
 
-Examining Famous Frameworks and Libraries
+## Examining Famous Frameworks and Libraries
 * Learning from other’s good code
     * Open source code (Angular, jQuery, React, Vue, etc)
     * https://github.com/collections/front-end-javascript-frameworks
 * Deep dive into source code
     * DOM (document object model) is separate from jsEngine
     * Method chaining- calling one method after another and each method affects the parent object (done by returning at the end of method this variable)
-Building a Framework/Library
+## Building a Framework/Library
 * Structuring safe code
     * Create execution context trough IIFE, passing global context as first param and other libs as consecutive params
 * Our object and it’s prototype
@@ -142,7 +143,7 @@ Building a Framework/Library
 * Using Framework
     * ; in front of IIFE makes sure code is not parsed wrong when minified along previous code
 
-Bonus lecture
+## Bonus lecture
 * Transpile: convert the syntax of one programming language to another
             * Languages that don’t really ever run anywhere are processed by ‘transpilers’ that generate javascript
 * Transpiled languages:
@@ -171,3 +172,4 @@ Promises, Async and await
     * Rely in promises as concept
     * When await is encountered execution context is paused (sent aside to queue). After Promise waited finishes, the paused execution context is reinserted in stack and continues executions 
     * Code using async - await should be thought as Promises compliant
+
