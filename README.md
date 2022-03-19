@@ -27,8 +27,8 @@ resumed ideas from [JavaScript: Understanding the Weird Parts- Anthony Alicea](h
 
 -  Name/Value pair: 
     - `a name that maps to a unique value`
-    -       Name may be defined more than once, but can have only one value in any given context
-    -       Value may be more name/value pairs
+         -  Name may be defined more than once, but can have only one value in any given context
+         -  Value may be more name/value pairs
 -  Object  
    -  `collection of name/value pairs`
 
@@ -37,9 +37,9 @@ resumed ideas from [JavaScript: Understanding the Weird Parts- Anthony Alicea](h
 -  Hoisting
    -  JavaScript's default behavior of moving declarations to the top
    - ```when creating execution context first allocates memory space for all declared functions and variables( assigning them value undefined) and only after having them all hoisted executes code (assigments and functions calls)```
- 
- 
-        <img width="616" align="center" alt="Screenshot 2022-03-19 at 21 04 59" src="https://user-images.githubusercontent.com/54862062/159135154-bf37849c-af10-4a9c-bc42-9f6bab9d426f.png">
+   
+ ![Screenshot 2022-03-19 at 21 21 29](https://user-images.githubusercontent.com/54862062/159135587-17de5eb0-67d4-4955-bea3-9dfd35623087.png)
+
 
 -  Scope Chain (propagation of scopes from parent to child)
 -  JavaScript Engine->event Queue (asynchronous behaviour is related to what happens outside JavaScript Engine-> resulted from  execution injection into stack)
