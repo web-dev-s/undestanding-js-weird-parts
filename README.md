@@ -78,7 +78,8 @@ resumed ideas from [JavaScript: Understanding the Weird Parts- Anthony Alicea](h
 <img width="749" align="center" alt="Screenshot 2022-03-19 at 22 25 59" src="https://user-images.githubusercontent.com/54862062/159137668-d608bebe-7fa4-45ea-b5ac-ff56cbbdcdb6.png">
 </p>
 
--  JavaScript Engine->event Queue (asynchronous behaviour is related to what happens outside JavaScript Engine-> resulted from  execution injection into stack)
+-  JavaScript Engine ```listen for event Queue```
+             ``asynchronous behaviour is related to what happens outside JavaScript Engine-> resulted from  execution injection into stack``
 
 <p align="center">
 <img width="1711" alt="Screenshot 2022-03-19 at 23 06 30" src="https://user-images.githubusercontent.com/54862062/159138434-7365ce7f-6eb7-431b-a8b9-dc0775bf6e98.png">
