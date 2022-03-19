@@ -42,8 +42,8 @@ resumed ideas from [JavaScript: Understanding the Weird Parts- Anthony Alicea](h
  
 - Javascript is single threaded, syncroneaous execution   
 
-                    -   ``single threaded: only one execution command at a time``
-                    -   ``syncroneaous: one instruction at a time, and in order``
+                       ```single threaded: only one execution command at a time```
+                        ```syncroneaous: one instruction at a time, and in order``
     
 <img width="616" align="center" alt="Screenshot 2022-03-19 at 21 29 20" src="https://user-images.githubusercontent.com/54862062/159135685-5b96d49c-4a1d-4636-a7ae-87a4dc896454.png">
 
