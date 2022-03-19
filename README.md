@@ -7,9 +7,9 @@ resumed ideas from [JavaScript: Understanding the Weird Parts- Anthony Alicea](h
 ### Syntax parser: 
 
 `a program that reads your code and determines what it does and if its gramar is valid`
-<br clear="left"/>
+<p align="center">
 <img width="749" alt="Screenshot 2022-03-19 at 20 16 46" src="https://user-images.githubusercontent.com/54862062/159133561-6916572e-845e-47d2-a513-a38124c00ec1.png">
-
+</p>
 ### Lexical Environment   
 
 `where something sits phisically in the code you write`
