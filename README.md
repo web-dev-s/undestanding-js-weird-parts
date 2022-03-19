@@ -7,7 +7,7 @@ resumed ideas from [JavaScript: Understanding the Weird Parts- Anthony Alicea](h
 ### Syntax parser: 
 
 `a program that reads your code and determines what it does and if its gramar is valid`
-
+<br clear="left"/>
 <img width="749" alt="Screenshot 2022-03-19 at 20 16 46" src="https://user-images.githubusercontent.com/54862062/159133561-6916572e-845e-47d2-a513-a38124c00ec1.png">
 
 ### Lexical Environment   
@@ -21,7 +21,7 @@ resumed ideas from [JavaScript: Understanding the Weird Parts- Anthony Alicea](h
 -  can contain things beyond you've written in code
 -  _this_ : special variable in javascript
 -  Global: means mostly "not inside a function"
-
+<br clear="left"/>
 <img width="799" align="center" alt="Screenshot 2022-03-19 at 20 43 42" src="https://user-images.githubusercontent.com/54862062/159134960-21207843-e66d-4e6a-81c2-01609e7112ec.png">
 
 
@@ -31,28 +31,28 @@ resumed ideas from [JavaScript: Understanding the Weird Parts- Anthony Alicea](h
          -  Value may be more name/value pairs
 -  Object  
    -  `collection of name/value pairs`
-
+<br clear="left"/>
 <img width="1039" align="center" alt="Screenshot 2022-03-19 at 20 32 34" src="https://user-images.githubusercontent.com/54862062/159134025-e32f6f64-e350-4c43-b261-44cb48006c06.png">
 
 -  Hoisting
    -  JavaScript's default behavior of moving declarations to the top
    - ```when creating execution context first allocates memory space for all declared functions and variables( assigning them value undefined) and only after having them all hoisted executes code (assigments and functions calls)```
-   
+  <br clear="left"/> 
  <img width="616" align="center" alt="Screenshot 2022-03-19 at 21 21 29" src="https://user-images.githubusercontent.com/54862062/159135587-17de5eb0-67d4-4955-bea3-9dfd35623087.png">
  
 - Javascript is single threaded, syncroneaous execution   
-  
+<br clear="left"/>
 <img width="616" align="center" alt="Screenshot 2022-03-19 at 21 29 20" src="https://user-images.githubusercontent.com/54862062/159135685-5b96d49c-4a1d-4636-a7ae-87a4dc896454.png">
 
 -  _Single Threaded_: ```only one execution command at a time```
 -  _Syncroneaous_: ```one instruction at a time, and in order ```
-
+<br clear="left"/>
 <img width="1332" align="center" alt="Screenshot 2022-03-19 at 21 50 26" src="https://user-images.githubusercontent.com/54862062/159136325-32ee2eb9-c08c-4c41-97b0-83ea09091abc.png">
 
 -  Variable Environment 
         -  ``where the variable live``
         -  ``and how they relate to each other in memory``
-
+<br clear="left"/>
 <img width="644" align="center" alt="Screenshot 2022-03-19 at 21 58 47" src="https://user-images.githubusercontent.com/54862062/159136588-4821ef71-fa4a-43a1-9369-83a86b1e47a7.png">
 
  
