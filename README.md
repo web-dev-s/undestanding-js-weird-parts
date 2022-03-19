@@ -41,8 +41,7 @@ resumed ideas from [JavaScript: Understanding the Weird Parts- Anthony Alicea](h
 
 -  Hoisting
    -  JavaScript's default behavior of moving declarations to the top
-   - ```
-   when creating execution context first allocates memory space for all declared functions and variables( assigning them value undefined) and only after having them all hoisted executes code (assigments and functions calls)
+   - ``` when creating execution context first allocates memory space for all declared functions and variables( assigning them value undefined) and only after having them all hoisted executes code (assigments and functions calls)
    ```
 
 <p align="center">
