@@ -17,7 +17,7 @@ resumed ideas from [JavaScript: Understanding the Weird Parts- Anthony Alicea](h
 # Execution Context 
 
 `a wrapper to help manage the code that is running`
-``
+
 -  can contain things beyond you've written in code
 -  _this_ : special variable in javascript
 -  Global: means mostly "not inside a function"
@@ -27,15 +27,18 @@ resumed ideas from [JavaScript: Understanding the Weird Parts- Anthony Alicea](h
 
 -  Name/Value pair: 
     - `a name that maps to a unique value`
-            ```
                      -  Name may be defined more than once, but can have only one value in any given context
                      -  Value may be more name/value pairs
-            ```
 -  Object  
    -  `collection of name/value pairs`
 
 <img width="1039" alt="Screenshot 2022-03-19 at 20 32 34" src="https://user-images.githubusercontent.com/54862062/159134025-e32f6f64-e350-4c43-b261-44cb48006c06.png">
 
+-  Hoisting
+   - ``when creating execution context first allocates memory space for all decalred variables and functions and after having them all then executes code (assigments and functions calls)`` 
+   -  ``JavaScript's default behavior of moving declarations to the top``
+   
+<img width="616" alt="Screenshot 2022-03-19 at 21 04 59" src="https://user-images.githubusercontent.com/54862062/159135154-bf37849c-af10-4a9c-bc42-9f6bab9d426f.png">
 
 -  Scope Chain (propagation of scopes from parent to child)
 -  JavaScript Engine->event Queue (asynchronous behaviour is related to what happens outside JavaScript Engine-> resulted from  execution injection into stack)
