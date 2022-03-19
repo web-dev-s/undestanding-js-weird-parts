@@ -7,23 +7,22 @@ resumed ideas from [JavaScript: Understanding the Weird Parts- Anthony Alicea](h
 ### Conceptual asides:
 
 # Syntax parser: 
-* a program that reads your code and determines what it does and if its gramar is valid
+`a program that reads your code and determines what it does and if its gramar is valid`
 <img width="749" alt="Screenshot 2022-03-19 at 20 16 46" src="https://user-images.githubusercontent.com/54862062/159133561-6916572e-845e-47d2-a513-a38124c00ec1.png">
 
-# Lexical Environment 
-          * where something sits phisically in the code you write
-# Execution Context
-*  a wrapper to help manage the code that is running
+# Lexical Environment   `where something sits phisically in the code you write`
+# Execution Context `a wrapper to help manage the code that is running`
+ 
            *  can contain things beyond you've written in code
            *  _this_ : special variable in javascript
            *  Global: means mostly "not inside a function"
 
 <img width="799" alt="Screenshot 2022-03-19 at 20 43 42" src="https://user-images.githubusercontent.com/54862062/159134445-8d4f27e6-fed3-4019-baed-151d2ece0f1a.png">
 
--  Name/Value pair: a name that maps to a unique value
+-  Name/Value pair: `a name that maps to a unique value`
                      *  Name may be defined more than once, but can have only one value in any given context
                      *  Value may be more name/value pairs
--  Object: collection of name/value pairs
+-  Object  `collection of name/value pairs`
 
 <img width="1039" alt="Screenshot 2022-03-19 at 20 32 34" src="https://user-images.githubusercontent.com/54862062/159134025-e32f6f64-e350-4c43-b261-44cb48006c06.png">
 
