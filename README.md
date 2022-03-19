@@ -58,6 +58,9 @@ resumed ideas from [JavaScript: Understanding the Weird Parts- Anthony Alicea](h
  
 -  Scope Chain (propagation of scopes from parent to child)
 
+![Screenshot 2022-03-19 at 22 15 42](https://user-images.githubusercontent.com/54862062/159137125-8b3d2324-c047-4389-b7ca-f86cad5fcf7b.png)
+
+
 -  JavaScript Engine->event Queue (asynchronous behaviour is related to what happens outside JavaScript Engine-> resulted from  execution injection into stack)
 
 ## Types and Operators:
