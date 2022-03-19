@@ -2,11 +2,10 @@
 resumed ideas from [JavaScript: Understanding the Weird Parts- Anthony Alicea](https://www.udemy.com/course/understand-javascript/)
 
 
-## Execution Context and Lexical Environments:
-
-### Conceptual asides:
+## Execution Context and Lexical Environments- conceptual asides
 
 ### Syntax parser: 
+
 `a program that reads your code and determines what it does and if its gramar is valid`
 
 <img width="749" alt="Screenshot 2022-03-19 at 20 16 46" src="https://user-images.githubusercontent.com/54862062/159133561-6916572e-845e-47d2-a513-a38124c00ec1.png">
