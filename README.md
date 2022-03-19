@@ -16,7 +16,7 @@ resumed ideas from [JavaScript: Understanding the Weird Parts- Anthony Alicea](h
 
 ### Execution Context 
 
-`a wrapper to help manage the code that is running`
+`a wrapper to help manage the code that is running that consist in an creation phase and an execution phase`
 
 -  can contain things beyond you've written in code
 -  _this_ : special variable in javascript
@@ -42,6 +42,9 @@ resumed ideas from [JavaScript: Understanding the Weird Parts- Anthony Alicea](h
 
 
 -  Scope Chain (propagation of scopes from parent to child)
+
+<img width="616" alt="Screenshot 2022-03-19 at 21 29 20" src="https://user-images.githubusercontent.com/54862062/159135685-5b96d49c-4a1d-4636-a7ae-87a4dc896454.png">
+
 -  JavaScript Engine->event Queue (asynchronous behaviour is related to what happens outside JavaScript Engine-> resulted from  execution injection into stack)
 
 ## Types and Operators:
