@@ -23,7 +23,7 @@ resumed ideas from [JavaScript: Understanding the Weird Parts- Anthony Alicea](h
 -  _this_ : special variable in javascript
 -  Global: means mostly "not inside a function"
 <p align="center">
-<img width="799" align="center" alt="Screenshot 2022-03-19 at 20 43 42" src="https://user-images.githubusercontent.com/54862062/159134960-21207843-e66d-4e6a-81c2-01609e7112ec.png">
+<img width="749" align="center" alt="Screenshot 2022-03-19 at 20 43 42" src="https://user-images.githubusercontent.com/54862062/159134960-21207843-e66d-4e6a-81c2-01609e7112ec.png">
 </p>
 
 -  Name/Value pair: 
@@ -33,28 +33,31 @@ resumed ideas from [JavaScript: Understanding the Weird Parts- Anthony Alicea](h
 -  Object  
    -  `collection of name/value pairs`
 <p align="center">
-<img width="1039" align="center" alt="Screenshot 2022-03-19 at 20 32 34" src="https://user-images.githubusercontent.com/54862062/159134025-e32f6f64-e350-4c43-b261-44cb48006c06.png">
+<img width="749" align="center" alt="Screenshot 2022-03-19 at 20 32 34" src="https://user-images.githubusercontent.com/54862062/159134025-e32f6f64-e350-4c43-b261-44cb48006c06.png">
 </p>
 -  Hoisting
    -  JavaScript's default behavior of moving declarations to the top
    - ```when creating execution context first allocates memory space for all declared functions and variables( assigning them value undefined) and only after having them all hoisted executes code (assigments and functions calls)```
  <p align="center">
- <img width="616" align="center" alt="Screenshot 2022-03-19 at 21 21 29" src="https://user-images.githubusercontent.com/54862062/159135587-17de5eb0-67d4-4955-bea3-9dfd35623087.png">
+ <img width="749" align="center" alt="Screenshot 2022-03-19 at 21 21 29" src="https://user-images.githubusercontent.com/54862062/159135587-17de5eb0-67d4-4955-bea3-9dfd35623087.png">
  </p>
 - Javascript is single threaded, syncroneaous execution   
 <p align="center">
-<img width="616" align="center" alt="Screenshot 2022-03-19 at 21 29 20" src="https://user-images.githubusercontent.com/54862062/159135685-5b96d49c-4a1d-4636-a7ae-87a4dc896454.png">
+<img width="749" align="center" alt="Screenshot 2022-03-19 at 21 29 20" src="https://user-images.githubusercontent.com/54862062/159135685-5b96d49c-4a1d-4636-a7ae-87a4dc896454.png">
 </p>
+
 -  _Single Threaded_: ```only one execution command at a time```
 -  _Syncroneaous_: ```one instruction at a time, and in order ```
+
 <p align="center">
-<img width="1332" align="center" alt="Screenshot 2022-03-19 at 21 50 26" src="https://user-images.githubusercontent.com/54862062/159136325-32ee2eb9-c08c-4c41-97b0-83ea09091abc.png">
+<img width="749" align="center" alt="Screenshot 2022-03-19 at 21 50 26" src="https://user-images.githubusercontent.com/54862062/159136325-32ee2eb9-c08c-4c41-97b0-83ea09091abc.png">
 </p>
 -  Variable Environment 
         -  ``where the variable live``
         -  ``and how they relate to each other in memory``
+
 <p align="center">
-<img width="644" align="center" alt="Screenshot 2022-03-19 at 21 58 47" src="https://user-images.githubusercontent.com/54862062/159136588-4821ef71-fa4a-43a1-9369-83a86b1e47a7.png">
+<img width="749" align="center" alt="Screenshot 2022-03-19 at 21 58 47" src="https://user-images.githubusercontent.com/54862062/159136588-4821ef71-fa4a-43a1-9369-83a86b1e47a7.png">
 </p>
  
 -  Scope Chain (propagation of scopes from parent to child)
