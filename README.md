@@ -17,9 +17,9 @@ resumed ideas from [JavaScript: Understanding the Weird Parts- Anthony Alicea](h
 # Execution Context 
 
 `a wrapper to help manage the code that is running` 
-           *  can contain things beyond you've written in code
-           *  _this_ : special variable in javascript
-           *  Global: means mostly "not inside a function"
+-  ``can contain things beyond you've written in code``
+-  ``_this_ : special variable in javascript``
+- ``Global: means mostly "not inside a function"``
 
 <img width="799" alt="Screenshot 2022-03-19 at 20 43 42" src="https://user-images.githubusercontent.com/54862062/159134445-8d4f27e6-fed3-4019-baed-151d2ece0f1a.png">
 
