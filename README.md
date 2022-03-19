@@ -8,6 +8,7 @@ resumed ideas from [JavaScript: Understanding the Weird Parts- Anthony Alicea](h
 
 ### Syntax parser: 
 `a program that reads your code and determines what it does and if its gramar is valid`
+
 <img width="749" alt="Screenshot 2022-03-19 at 20 16 46" src="https://user-images.githubusercontent.com/54862062/159133561-6916572e-845e-47d2-a513-a38124c00ec1.png">
 
 ### Lexical Environment   
@@ -27,8 +28,8 @@ resumed ideas from [JavaScript: Understanding the Weird Parts- Anthony Alicea](h
 
 -  Name/Value pair: 
     - `a name that maps to a unique value`
-            -  Name may be defined more than once, but can have only one value in any given context
-            -  Value may be more name/value pairs
+    -       Name may be defined more than once, but can have only one value in any given context
+    -       Value may be more name/value pairs
 -  Object  
    -  `collection of name/value pairs`
 
