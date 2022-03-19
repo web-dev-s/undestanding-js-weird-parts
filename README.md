@@ -49,7 +49,13 @@ resumed ideas from [JavaScript: Understanding the Weird Parts- Anthony Alicea](h
 
 <img width="1332" align="center" alt="Screenshot 2022-03-19 at 21 50 26" src="https://user-images.githubusercontent.com/54862062/159136325-32ee2eb9-c08c-4c41-97b0-83ea09091abc.png">
 
+-  Variable Environment 
+        -  ``where the variable live``
+        -  ``and how they relate to each other in memory``
 
+<img width="644" align="center" alt="Screenshot 2022-03-19 at 21 58 47" src="https://user-images.githubusercontent.com/54862062/159136588-4821ef71-fa4a-43a1-9369-83a86b1e47a7.png">
+
+ 
 -  Scope Chain (propagation of scopes from parent to child)
 
 -  JavaScript Engine->event Queue (asynchronous behaviour is related to what happens outside JavaScript Engine-> resulted from  execution injection into stack)
