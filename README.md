@@ -6,15 +6,15 @@ resumed ideas from [JavaScript: Understanding the Weird Parts- Anthony Alicea](h
 
 ### Conceptual asides:
 
-# Syntax parser: 
+### Syntax parser: 
 `a program that reads your code and determines what it does and if its gramar is valid`
 <img width="749" alt="Screenshot 2022-03-19 at 20 16 46" src="https://user-images.githubusercontent.com/54862062/159133561-6916572e-845e-47d2-a513-a38124c00ec1.png">
 
-# Lexical Environment   
+### Lexical Environment   
 
 `where something sits phisically in the code you write`
 
-# Execution Context 
+### Execution Context 
 
 `a wrapper to help manage the code that is running`
 
@@ -35,9 +35,10 @@ resumed ideas from [JavaScript: Understanding the Weird Parts- Anthony Alicea](h
 <img width="1039" align="center" alt="Screenshot 2022-03-19 at 20 32 34" src="https://user-images.githubusercontent.com/54862062/159134025-e32f6f64-e350-4c43-b261-44cb48006c06.png">
 
 -  Hoisting
-   - ``when creating execution context first allocates memory space for all decalred variables and functions and after having them all then executes code (assigments and functions calls)`` 
-   -  ``JavaScript's default behavior of moving declarations to the top``
-   
+   -  JavaScript's default behavior of moving declarations to the top
+   - ```when creating execution context first allocates memory space for all declared functions and variables( assigning them value undefined) and only after having them all hoisted executes code (assigments and functions calls)```
+ 
+ 
         <img width="616" align="center" alt="Screenshot 2022-03-19 at 21 04 59" src="https://user-images.githubusercontent.com/54862062/159135154-bf37849c-af10-4a9c-bc42-9f6bab9d426f.png">
 
 -  Scope Chain (propagation of scopes from parent to child)
