@@ -44,8 +44,8 @@ resumed ideas from [JavaScript: Understanding the Weird Parts- Anthony Alicea](h
   
 <img width="616" align="center" alt="Screenshot 2022-03-19 at 21 29 20" src="https://user-images.githubusercontent.com/54862062/159135685-5b96d49c-4a1d-4636-a7ae-87a4dc896454.png">
 
-- ```_Single Threaded_: only one execution command at a time```
-- ```_Syncroneaous_: one instruction at a time, and in order ```
+-  _Single Threaded_: ```only one execution command at a time```
+-  _Syncroneaous_: ```one instruction at a time, and in order ```
 
 <img width="1332" align="center" alt="Screenshot 2022-03-19 at 21 50 26" src="https://user-images.githubusercontent.com/54862062/159136325-32ee2eb9-c08c-4c41-97b0-83ea09091abc.png">
 
