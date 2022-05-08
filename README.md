@@ -93,22 +93,66 @@ resumed ideas from [JavaScript: Understanding the Weird Parts- Anthony Alicea](h
 
 
 ## Types and Operators:
-- dynamic typing (no static typing)
-- primitive types: data that represents a single value that is not an object ( 
-* undefined -lack of existence, declared by engine
-* null- lack of existence, declared by programmer
-* boolean- true or false
-* number- floating point number
-* string- sequence of chars between ‘’, “” or ``
-* symbol-ES6
+### Dynamic typing (no static typing)
+  - `You don't tell the engine what type of data a variable holds, it figures it out while your code is running`
+  - `Variables can hold different types of values because it's all figured out during execution `
+<p align="center">
+ <img width="749" alt="Screenshot 2022-05-08 at 13 34 20" src="https://user-images.githubusercontent.com/54862062/167292258-23d8be92-6429-4cf3-8895-fead35eabb96.png">
+</p> 
 
-- operators-special function syntactically different written (infixed notation between 2 arguments that return result)
+### Primitive types - ` data that represents a single value that is not an object ` (are only 6): 
+-  `undefined` -lack of existence, declared by engine (you shouldn't set value to this)
+-  `null`- lack of existence, declared by programmer (you can set value to this)
+-  `boolean` - `true` or `false`
+-  `number` - only one number type under the hood: `floating point number`
+-  `string` - sequence of chars between `single quotes (‘’)`, `double quotes (“”)` or `backticks (``)`
+-  `symbol` - comes with ES6 
 
-* Precedence (order of call from higher downer) and Associativity (same precedence execution ltr or rtl )
-* Coercion -converting a value from one type to another
-* Comparison Operators -coercion of booleans to integer boolean (0 or 1) (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Equality_comparisons_and_sameness)
-* Existence and Booleans : Boolean(0) coerce to false => a=0; if (a||a===0){’executes true’}
-* Default Values : colliding imported libs in global context ,overriding with latest assignment same named global variable value 
+### Operators -  `special function syntactically different written` 
+- `infixed notation between 2 arguments that return result; ex: 1 + 1; 4 > 3; `
+
+- `precedence` (order of call from higher to downer) and `associativity` (same precedence execution ltr or rtl ) <a href="https://github.com/web-dev-s/undestanding-js-weird-parts/blob/main/Types%20and%20Operators/Operator%2BPrecedence%2BIn%2BJavascript.pdf">Operators and precedence pdf</a>
+
+<p align="center">
+ <img width="245" alt="Screenshot 2022-05-08 at 13 57 39" src="https://user-images.githubusercontent.com/54862062/167293064-2111a587-e1fa-4f50-9cac-9c746d090ea3.png">
+<img width="245" alt="Screenshot 2022-05-08 at 13 57 21" src="https://user-images.githubusercontent.com/54862062/167293068-eab43639-99e6-44ed-a682-b7f03232bec0.png">
+ <img width="245" alt="Screenshot 2022-05-08 at 14 14 21" src="https://user-images.githubusercontent.com/54862062/167293662-cec1ca49-f32c-40b6-9b02-40519124158d.png">
+ <img width="245" alt="Screenshot 2022-05-08 at 14 18 21" src="https://user-images.githubusercontent.com/54862062/167293801-6896894b-af07-4c13-9587-a2ddb51238ba.png">
+</p>
+
+- `coercion` - converting a value from one type to another
+  <p align="center">
+   <img width="245" alt="Screenshot 2022-05-08 at 14 25 32" src="https://user-images.githubusercontent.com/54862062/167294063-63542a89-69b8-451c-b827-07a490f03a39.png">
+   </p> 
+-  `comparison operators`  - coercion is computed by engine sometimes in surprizing way: booleans to integer boolean (0 or 1) are also taken into account: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Equality_comparisons_and_sameness">Equality_comparisons_and_sameness </a>
+
+
+     <p align="center">
+    <img width="245" alt="Screenshot 2022-05-08 at 14 31 40" src="https://user-images.githubusercontent.com/54862062/167294240-6fee300b-f02e-49a9-9cfa-f95bae730633.png">
+    <img width="245" alt="Screenshot 2022-05-08 at 14 32 49" src="https://user-images.githubusercontent.com/54862062/167294274-072302fd-9654-40b6-83c8-dddd398a93d6.png">
+    <img width="245" alt="Screenshot 2022-05-08 at 14 34 06" src="https://user-images.githubusercontent.com/54862062/167294304-5cc31f9f-d719-4702-950e-0f9bd7cab838.png">
+    <img width="245" alt="Screenshot 2022-05-08 at 14 37 38" src="https://user-images.githubusercontent.com/54862062/167294398-bda609b3-d8f5-4bf0-8167-22c5ad86f352.png">
+    <img width="245" alt="Screenshot 2022-05-08 at 14 40 49" src="https://user-images.githubusercontent.com/54862062/167294546-b0e7294a-0203-4856-bafb-e9ffe19c4dc4.png">
+    <img width="245" alt="Screenshot 2022-05-08 at 14 41 44" src="https://user-images.githubusercontent.com/54862062/167294558-db9064f4-9ce5-42f1-86f2-399e774234da.png">
+    <img width="245" alt="Screenshot 2022-05-08 at 14 43 17" src="https://user-images.githubusercontent.com/54862062/167294581-edc96226-a965-4f2b-bf3c-05d74f39af64.png">
+</p>
+
+- `existence and booleans` : Boolean(0) coerce to false => a=0; if (a||a===0){’executes true’}
+ 
+<p align="center">
+<img width="245" alt="Screenshot 2022-05-08 at 14 51 44" src="https://user-images.githubusercontent.com/54862062/167294878-cad9f12d-65de-4496-a699-8041816d2c1d.png">
+<img width="245" alt="Screenshot 2022-05-08 at 14 55 14" src="https://user-images.githubusercontent.com/54862062/167294985-64ed40d1-e361-46b5-87c9-44ec40c58a70.png"
+</p>
+
+- `default values` : colliding imported libs in global context ,overriding with latest assignment same named global variable value 
+<p align="center">
+<img width="245" alt="Screenshot 2022-05-08 at 15 15 36" src="https://user-images.githubusercontent.com/54862062/167295705-c4ce1688-e407-418e-b97d-7da94ef07952.png">
+<img width="245" alt="Screenshot 2022-05-08 at 15 15 12" src="https://user-images.githubusercontent.com/54862062/167295708-2e922af3-97dd-4658-ab4e-c7b255801c16.png">
+<img width="245" alt="Screenshot 2022-05-08 at 15 23 49" src="https://user-images.githubusercontent.com/54862062/167295992-52e6e4ff-433e-42e5-9ab2-54760838bbce.png">
+<img width="245" alt="Screenshot 2022-05-08 at 15 23 14" src="https://user-images.githubusercontent.com/54862062/167295994-9eec2121-64b5-4d68-9a36-2ddbbd54666c.png">
+
+</p>
+
 
 ## Objects and functions:
 * An object literal contains name-value pairs with values being primitives or objects or methods(functions attached to object)
